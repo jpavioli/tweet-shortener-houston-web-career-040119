@@ -22,16 +22,16 @@ def word_substituter(tweet_string)
      ["at"] => "@",
      ["and"] => "&"
   }
+  new_tweet
   tweet_array = tweet_string.split(" ")
   tweet_array.collect do |i|
-  tweet = []
     dictionary_hash.each do |a,b|
       if a.include? i
-        tweet << b 
+        new_tweet << b 
       else
-        tweet << i
+        new_tweet << i
       end
     end
   end
-  tweet.join(" ")
+  new_tweet.join(" ")
 end 
