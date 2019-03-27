@@ -39,6 +39,6 @@ end
 
 def bluk_tweet_shortener(all_tweets)
   all_tweets.each do |i|
-    puts word_substituter(i)
+    word_substituter(i)
   end
 end
