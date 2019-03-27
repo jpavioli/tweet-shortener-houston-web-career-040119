@@ -65,5 +65,5 @@ def shortened_tweet_truncator(tweet)
   elsif tweet_size < 140
     new_tweet = tweet
   end
-  new_tweet
+  new_tweet.size
 end
