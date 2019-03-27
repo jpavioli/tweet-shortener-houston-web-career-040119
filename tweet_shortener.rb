@@ -24,14 +24,14 @@ def word_substituter(tweet_string)
   }
   tweet_array = tweet_string.split(" ")
   tweet_array.collect do |i|
-  new_tweet = []
+  tweet = []
     dictionary_hash.each do |a,b|
       if a.include? i
-        new_tweet << b 
+        tweet << b 
       else
-        new_tweet << i
+        tweet << i
       end
     end
   end
-  new_tweet.join(" ")
+  tweet.join(" ")
 end 
