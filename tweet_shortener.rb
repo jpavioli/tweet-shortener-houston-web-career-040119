@@ -23,15 +23,16 @@ def word_substituter(tweet_string)
      ["and"] => "&"
   }
   new_tweet = []
+  new_word = ""
   tweet_array = tweet_string.split(" ")
   tweet_array.collect do |i|
+    new_word = i
     dictionary_hash.each do |a,b|
       if a.include? i
-        new_tweet << b 
-      else
-        new_tweet << i
+        new_word = b 
       end
     end
+    new_tweet << new_word
   end
   new_tweet.join(" ")
 end 
