@@ -11,7 +11,7 @@ def dictionary
 end
 
 def word_substituter(tweet_string)
-  tweet_array = tweet_string.flatten(" ")
+  tweet_array = tweet_string.split(" ")
   tweet_array.each do |i|
     dictionary_hash.each do |a,b|
       if tweet_array[i] == a.any?
