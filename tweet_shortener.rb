@@ -1,3 +1,5 @@
+require 'pry'
+
 def dictionary 
   dictionary_hash = {
      ["hello"] => "hi",
@@ -23,6 +25,7 @@ def word_substituter(tweet_string)
   tweet_array = tweet_string.split(" ")
   tweet_array.map do |i|
     dictionary_hash.each do |a,b|
+      binding.pry
       if b.include? i
         a
       end
