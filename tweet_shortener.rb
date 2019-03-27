@@ -22,9 +22,9 @@ def word_substituter(tweet_string)
   }
   tweet_array = tweet_string.split(" ")
   tweet_array.each do |i|
-    dictionary_hash.each do |a,b|
-      if tweet_array[i] == a.any?
-        tweet_array[i] = b
+    dictionary_hash.map do |a,b|
+      if i == a.any?
+        i = b
       end
     end
   end
