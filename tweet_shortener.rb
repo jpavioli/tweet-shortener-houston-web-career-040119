@@ -24,7 +24,7 @@ def word_substituter(tweet_string)
   tweet_array.each do |i|
     dictionary_hash.map do |a,b|
       if i == a.any?
-        i = b
+        b
       end
     end
   end
