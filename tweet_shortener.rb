@@ -60,7 +60,7 @@ def shortened_tweet_truncator(tweet)
   if tweet_size > 140
     new_tweet = word_substituter(tweet)
     if new_tweet > 140
-      new_tweet = "#{new_tweet[0..138]}..."
+      new_tweet = "#{new_tweet[0..137]}..."
     end
   elsif tweet_size < 140
     new_tweet = tweet
