@@ -48,9 +48,9 @@ def selective_tweet_shortener(tweet)
   if a = nil
     nil
   else
-    if a.length > 140
+    if a.size > 140
       puts a
-    elsif a.length < 130
+    elsif a.size < 130
       puts i
     end
   end
