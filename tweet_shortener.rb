@@ -24,7 +24,7 @@ def word_substituter(tweet_string)
   }
   tweet_array = tweet_string.split(" ")
   tweet_array.collect do |i|
-  new_tweet =[]
+  new_tweet = []
     dictionary_hash.each do |a,b|
       if a.include? i
         new_tweet << b 
