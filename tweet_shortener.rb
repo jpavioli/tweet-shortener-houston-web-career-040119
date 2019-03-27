@@ -27,7 +27,7 @@ def word_substituter(tweet_string)
     dictionary_hash.each do |a,b|
       binding.pry
       if a.include? i
-        a
+        i = b 
       end
     end
   end
