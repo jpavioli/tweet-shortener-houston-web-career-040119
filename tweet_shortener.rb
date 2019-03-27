@@ -5,8 +5,7 @@ def dictionary
      "4" => ["for","four"],
      "b" => ["be"],
      "u" => ["you"],
-     ""
-     
-    
+     "@" => ["at"],
+     "&" => ["and"]
   }
 end
