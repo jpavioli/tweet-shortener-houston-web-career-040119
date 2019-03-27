@@ -22,7 +22,7 @@ def word_substituter(tweet_string)
      ["at"] => "@",
      ["and"] => "&"
   }
-  new_tweet
+  new_tweet = []
   tweet_array = tweet_string.split(" ")
   tweet_array.collect do |i|
     dictionary_hash.each do |a,b|
