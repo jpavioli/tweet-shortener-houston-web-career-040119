@@ -28,7 +28,7 @@ def word_substituter(tweet_string)
   tweet_array.collect do |i|
     new_word = i
     dictionary_hash.each do |a,b|
-      if a.include? i
+      if a.downcase.include? i
         new_word = b 
       end
     end
