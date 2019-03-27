@@ -15,6 +15,7 @@ end
 def word_substituter(tweet_string)
   tweet_array = tweet_string.flatten(" ")
   tweet_array.each do |i|
+    binding.pry
     dictionary_hash.each do |a,b|
       binding.pry
     end
