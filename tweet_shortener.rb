@@ -37,5 +37,8 @@ def word_substituter(tweet_string)
   new_tweet.join(" ")
 end 
 
-def bluk_tweet_shortener()
+def bluk_tweet_shortener(all_tweets)
+  all_tweets.each do |i|
+    puts word_substituter(i)
+  end
 end
