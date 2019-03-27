@@ -1,5 +1,3 @@
-require 'pry' 
-
 def dictionary 
   dictionary_hash = {
      ["hello"] => "hi",
@@ -15,9 +13,10 @@ end
 def word_substituter(tweet_string)
   tweet_array = tweet_string.flatten(" ")
   tweet_array.each do |i|
-    binding
     dictionary_hash.each do |a,b|
-      binding.pry
+      if tweet_array[i] == a.any?
+        tweet_array[i] = b
+      end
     end
   end
 end 
