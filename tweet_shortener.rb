@@ -36,3 +36,6 @@ def word_substituter(tweet_string)
   end
   new_tweet.join(" ")
 end 
+
+def bluk_tweet_shortener()
+end
