@@ -12,7 +12,7 @@ def dictionary
   }
 end
 
-def word_substituter(tweet_string,dictionary_hash)
+def word_substituter(tweet_string)
   tweet_array = tweet_string.flatten(" ")
   tweet_array.each do |i|
     dictionary_hash.each do |a,b|
