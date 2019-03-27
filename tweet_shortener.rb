@@ -1,11 +1,12 @@
 def dictionary 
   dictionary_hash = {
-     "hi" => ["hello"],
-     "2" => ["to","two","too"],
-     "4" => ["for","four"],
-     "b" => ["be"],
-     "u" => ["you"],
-     "@" => ["at"],
-     "&" => ["and"]
+     ["hello"] => "hi",
+     ["to","two","too"] => "2",
+     ["for","four"] => "4",
+     ["be"] => "b",
+     ["you"] => "u",
+     ["at"] => "@",
+     ["and"] => "&"
   }
 end
+
